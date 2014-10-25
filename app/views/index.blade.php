@@ -5,23 +5,23 @@
 	<meta name="author" content="edtorm@outlook.com" />
 </head>
 <body>
-	{{ Form::open(array('url' => 'foo/bar')) }}
+	{{ Form::open(array('url' => 'save')) }}
 
 		{{ Form::text('name', null, array('id' => 'name', 'placeholder' => 'Nombre')) }}
 
 		<br /><br />
 
-		{{ Form::checkbox('client', '1', null, ['id' => 'client']) }}
+		{{ Form::checkbox('type[]', '1', null, ['id' => 'cliente']) }}
 		{{ Form::label('email', 'Cliente') }}
 
 		<br /><br />
 
-		{{ Form::checkbox('ente_auditor', '2', null, ['id' => 'ente_auditor']) }}
+		{{ Form::checkbox('type[]', '1', null, ['id' => 'ente']) }}
 		{{ Form::label('email', 'Ente Auditor') }}
 
 		<br /><br />
 
-		{{ Form::checkbox('auditor', '3', null, ['id' => 'auditor']) }}
+		{{ Form::checkbox('type[]', '1', null, ['id' => 'auditado']) }}
 		{{ Form::label('email', 'Auditor') }}
 
 		<br /><br />
